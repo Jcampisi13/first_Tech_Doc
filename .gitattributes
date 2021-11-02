@@ -1,2 +1,278 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - Project 4- Technical Documentation </title>
+  
+  
+  
+  
+<style>
+#title{
+  max-width:100%;
+  height:auto;
+  text-align:center;
+  margin:0;
+  padding-bottom:25px;
+  padding-top:25px;
+  background-color:forestgreen;
+  color:black;
+  
+}
+
+#main-doc{
+  max-width:100%;
+  height:auto; 
+  display:flexbox;
+  background-color:white;
+}
+
+.header {
+  font-size:25px; font-weight:bold; text-align:center;
+}
+.deflist{
+  margin-left:5px;
+}
+#navbar{
+  background-color:forestgreen;
+  font-family:monospace;
+  font-size:18px;
+  border:solid;
+  color:black;
+  text-align:center;
+  position:fixed;
+  width:200px;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+.nav-link {
+    padding-bottom: 20%;
+    padding-left: 40%;
+    margin-left: -50%;
+
+}
+#divnav{
+      position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#divbody{
+  margin-left:25%;
+  padding:1px 16px;
+}
+#body{
+padding-left:10px;
+}
+
+#navigationbar{
+  list-style-type:none;
+}
+li a {
+  display: block;
+  width: 150px;
+  color:lightgreen;
+  text-decoration:none;
+  padding-top:20px;
+  padding-bottom:10px;
+  border-bottom:solid;
+  float:left;
+
+
+}
+a:hover{
+  background-color:white;
+  font-weight:bold;
+}
+ @media (max-width: 300px){
+    #main-doc{
+      font-size:5%;}}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <main id="main-doc">
+<div id="divnav">
+  <nav id="navbar">  
+    <header> <b><u><h1>HTML & CSS</u> </b></header></h1>
+    <ul id="navigationbar"> 
+      <li><a href="#html_layout" class="nav-link" >HTML Layout</a></li>
+      <li><a href="#left_right_center" class="nav-link" >Left Right Center</a></li>
+      <li><a href="#position" class="nav-link" >Position</a></li>
+      <li><a href="#responsive" class="nav-link" >Responsive</a></li>
+      <li><a href="#flex_box" class="nav-link" >Flex Box</a></li>
+      </ul> 
+  </nav></div>
+  <div id="divbody">
+<body id="body">  
+      <h2 id="title">Baby Coder: HTML-What keeps tripping me up</h2>
+  <section class="main-section" id="html_layout">
+
+  <header class="header">HTML Layout</header> 
+    <p>Understanding the organization of the all the tags was a little confusing for me at first. (Let's be honest... still is confusing.) Here is how I have defined the tags.</p> 
+  <ul>
+  <li>  Main tag <small>wraps around the main content in the page</small></li>
+     <li>Head (not header) tag <small> wraps your title and navigation bar</small></li>
+     <li> Title tag <small>is the title of your page</small></li>
+     <li> Navigation tag <small>is for your navigation bar</small></li>
+     <li> Header tag <small>wraps around the various topic titles, sort of like a section title</small></li> 
+     <li> Footer tag <small>wraps around the bottom of the screen stuff like a copywrite. </small></li>
+    <li> p tag <small>is a new paragraph and will add a margin of space.</small> </li> 
+     <li> Section tag <small>creates a section.</small> </li> 
+    <li> body tag <small> wraps most of the document and the body of it</small></li></ul> 
+<pre><code>So my layout template would look like this
+       
+        &lt;head>
+          &lt;title> Title of document &lt;/title>
+          &lt;nav> Navigation Bar and elements &lt;/nav>
+        &lt;/head>
+        
+        &lt;body>
+        &lt;section>
+         &lt;main> 
+          &lt;header> Section header &lt;/header>
+           &lt;p> Paragraph &lt;/p>
+         &lt;/section>
+       
+        &lt;section>
+          &lt;header> Another header 1-6 &lt;/header>
+            &lt;p>Paragraph &lt;/p>
+         &lt;/section>
+         &lt;/body>
+         &lt;footer> Footer&lt;/footer>
+  </code>
+      </pre>
+
+    <p>Tags can add better accessiblity for screen readers. Having a proper layout for your tags allows for better searches and better readablity for impaired.</p>
+
+
+  </section>
+  
+  <section class="main-section" id="left_right_center">
+    <header class="header">Left Right Center</header>  
+    <p>For each project thusfar, I have had issues with figuring out how to move my text around and even more difficult moving an image. Here is my attempt to organize my thoughts. I hope it helps you too.</p>
+    <p>Let's talk about padding and margins. Padding controls the elements space between the elements content and border. I think of it as how big or small you want the box the text is in to be. </p>
+    <pre> <code> padding: 50px; </code> </pre>
+      <p>Margin controls the space between elements border and surronding elements. I think of it as how far from the top, bottom, and sides the text box or element is from edges. </p>
+       <pre> <code> margin:50px;
+       margin:auto;  Will horizontally center element </code> </pre>
+  
+    <p>Text-align will allow you to move text in your little box. 
+    <pre> <code> text-align:center; </code> </pre>
+    <p>Another option would be to use Flex box which we will cover in our Flex box section.</p>
+  </section>
+  
+  <section class="main-section" id="position">
+    <header class="header">Position</header>  
+    <p>Position Relative moves ttop(bottom/right/left):Numberhe element to a certain location from the surrounding element. 
+Position relative is followed by a top, bottom, right, left attribute with a value with  which allows you to move the item. 
+    <pre> <code> position:relative;
+    top:5px; </code></pre> </p>
+      <p>Position Absolute moves it to a certain spot on the page. Not to be confused with Fixed which locks the item when your scroll. 
+<pre> <code>position:absolute;
+  top:50px;
+  right:50px;</code></pre>
+       </p>
+  </section>
+  
+  <section class="main-section" id="responsive">
+    <header class="header">Responsive</header>  
+    <p>I have had a hard time understanding what responsive does to page. As I understand, it helps to keep the image or text within the screen when you shrink and maximize the screen. It makes it look presentable in all devices to the viewer. </p>
+    <p>To make a text or image responsive, use:</p>
+    <pre><code>    img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+  </section>
+  
+  <section class="main-section" id="flex_box">
+    <header class="header">Flex Box</header>  
+    <p>Flex box allows you to display elements side by side or vertically side by side.     <pre><code>   img{
+      display:flex;
+      } </code></pre></p>
+    <p>Adding flex direction using the values row-reverse or column-reverse allows you to play with the order.</p>
+<pre><code> img{
+  flex-direction:row-reverse;
+  }</code></pre>
+  </section>
+ 
+<p>Happy coding all!</p></div>
+  
+</body>
+</main>
+
+
+<!--
+Things to work on:
+Still clueless on media quaries. Understand idea of them but not understanding execution
+
+Vertical navigation bar doesn't work well when changing size of screen.
+-->
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+      <script id="rendered-js" >
+// !! IMPORTANT README:
+
+// You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
+
+/***********
+INSTRUCTIONS:
+  - Select the project you would 
+    like to complete from the dropdown 
+    menu.
+  - Click the "RUN TESTS" button to
+    run the tests against the blank 
+    pen.
+  - Click the "TESTS" button to see 
+    the individual test cases. 
+    (should all be failing at first)
+  - Start coding! As you fulfill each
+    test case, you will see them go   
+    from red to green.
+  - As you start to build out your 
+    project, when tests are failing, 
+    you should get helpful errors 
+    along the way!
+    ************/
+
+// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
+
+// Once you have read the above messages, you can delete all comments.
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
