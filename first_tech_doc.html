@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+  <meta charset='UTF-8'>
+  <title>CodePen Demo</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/jcampisi13/pen/rNwXRBP?editors=1010">
+
+  
+  
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    #title{
+  max-width:100%;
+  height:auto;
+  text-align:center;
+  margin:0;
+  padding-bottom:25px;
+  padding-top:25px;
+  background-color:forestgreen;
+  color:black;
+  
+}
+
+#main-doc{
+  max-width:100%;
+  height:auto; 
+  display:flexbox;
+  background-color:white;
+}
+
+.header {
+  font-size:25px; font-weight:bold; text-align:center;
+}
+.deflist{
+  margin-left:5px;
+}
+#navbar{
+  background-color:forestgreen;
+  font-family:monospace;
+  font-size:18px;
+  border:solid;
+  color:black;
+  text-align:center;
+  position:fixed;
+  width:200px;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+.nav-link {
+    padding-bottom: 20%;
+    padding-left: 40%;
+    margin-left: -50%;
+
+}
+#divnav{
+      position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#divbody{
+  margin-left:25%;
+  padding:1px 16px;
+}
+#body{
+padding-left:10px;
+}
+
+#navigationbar{
+  list-style-type:none;
+}
+li a {
+  display: block;
+  width: 150px;
+  color:lightgreen;
+  text-decoration:none;
+  padding-top:20px;
+  padding-bottom:10px;
+  border-bottom:solid;
+  float:left;
+
+
+}
+a:hover{
+  background-color:white;
+  font-weight:bold;
+}
+ @media (max-width: 300px){
+    #main-doc{
+      font-size:5%;}}
+
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+  <main id="main-doc">
+<div id="divnav">
+  <nav id="navbar">  
+    <header> <b><u><h1>HTML CSS JS</u> </b></header></h1>
+    <ul id="navigationbar"> 
+      <li><a href="#html_layout" class="nav-link" >HTML Layout</a></li>
+      <li><a href="#left_right_center" class="nav-link" >Left Right Center</a></li>
+      <li><a href="#position" class="nav-link" >Position</a></li>
+      <li><a href="#responsive" class="nav-link" >Responsive</a></li>
+      <li><a href="#javascript_code_list class=" class="nav-link" >JavaScript Code</a></li>
+      </ul> 
+  </nav></div>
+  <div id="divbody">
+<body id="body">  
+      <h2 id="title">HTML| CSS | JavaScript</h2>
+  <section class="main-section" id="html_layout">
+
+  
+  <section class="main-section" id="left_right_center">
+    <header class="header">Left Right Center</header>  
+    <p>For each project thusfar, I have had issues with figuring out how to move my text around and even more difficult moving an image. Here is my attempt to organize my thoughts. I hope it helps you too.</p>
+    <p>Let's talk about padding and margins. Padding controls the elements space between the elements content and border. I think of it as how big or small you want the box the text is in to be. </p>
+    <pre> <code> padding: 50px; </code> </pre>
+      <p>Margin controls the space between elements border and surronding elements. I think of it as how far from the top, bottom, and sides the text box or element is from edges. </p>
+       <pre> <code> margin:50px;
+       margin:auto;  Will horizontally center element </code> </pre>
+  
+    <p>Text-align will allow you to move text in your little box. 
+    <pre> <code> text-align:center; </code> </pre>
+    <p>Another option would be to use Flex box which we will cover in our Flex box section.</p>
+  </section>
+  
+  <section class="main-section" id="position">
+    <header class="header">Position</header>  
+    <p>Position Relative moves ttop(bottom/right/left):Numberhe element to a certain location from the surrounding element. 
+Position relative is followed by a top, bottom, right, left attribute with a value with  which allows you to move the item. 
+    <pre> <code> position:relative;
+    top:5px; </code></pre> </p>
+      <p>Position Absolute moves it to a certain spot on the page. Not to be confused with Fixed which locks the item when your scroll. 
+<pre> <code>position:absolute;
+  top:50px;
+  right:50px;</code></pre>
+       </p>
+  </section>
+  
+  <section class="main-section" id="responsive">
+    <header class="header">Responsive</header>  
+    <p>I have had a hard time understanding what responsive does to page. As I understand, it helps to keep the image or text within the screen when you shrink and maximize the screen. It makes it look presentable in all devices to the viewer. </p>
+    <p>To make a text or image responsive, use:</p>
+    <pre><code>    img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+  </section>
+  
+  <section class="main-section" id="flex_box">
+    <header class="header">Flex Box</header>  
+    <p>Flex box allows you to display elements side by side or vertically side by side.     <pre><code>   img{
+      display:flex;
+      } </code></pre></p>
+    <p>Adding flex direction using the values row-reverse or column-reverse allows you to play with the order.</p>
+<pre><code> img{
+  flex-direction:row-reverse;
+  }</code></pre>
+  </section>
+
+   <section class="main-section" id="javascript_code_list">
+    <header class="header">JavaScript Code List</header>  
+     <p>I continue to hear advise that programming is not about memorizing. I find it beneficial to keep the spreadsheet below to use a tool box on how to solve issues. If reviwing this list doesn't work I turn to google and add it to my list. </p> 
+          <pre><code>  &lt;script&gt; Happy Algorithms &lt;/script&gt;
+      </code></pre>
+<img src="https://i.imgur.com/gMLkIbq.png" alt="Code List 1"><br>
+ <img src="https://i.imgur.com/dMkpNIX.png" alt="Code List 2"><br>   <img src="https://i.imgur.com/lzbji3N.png" alt="Code List 3"><br>
+<img src="https://i.imgur.com/kTh9b5l.png" alt="Code List 4"><br>     
+
+
+    <p>As I continue to learn, I will periodically update this information. </p>
+<pre><code> and... &lt;script&gt; Happy Coding All! &lt;/script&gt;</code></pre>
+  </section>
+</div>
+  
+</body>
+</main>
+
+
+<!--
+Things to work on:
+Still clueless on media quaries. Understand idea of them but not understanding execution
+
+Vertical navigation bar doesn't work well when changing size of screen.
+-->
+  
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script  src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-0a36e4a3-66e1-4bf1-6fa7-bd842cb7d5da" crossorigin></script>
+</body>
+
+</html>
